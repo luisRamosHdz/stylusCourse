@@ -1,0 +1,20 @@
+.center-grid
+    mixin-max-parametrico(10px)
+    padding minipadding
+    tone(false)
+
+.grid
+    display flex
+    flex-wrap wrap//da el salto cuando se llena
+    position relative
+    justify-content flex-start
+    flex-direction row
+
+[class^="grid--item"]
+    flex-shrink 0 //no se encoje
+    margin-right 12px
+    flex-grow 1 //crecen
+
+for i in gridsize 
+    .grid-item-{i}
+        width (100 / i) * 1%

@@ -1,0 +1,20 @@
+mixin-max-width()
+    display flex
+    justify-content center
+    max-width 800px
+
+mixin-max-parametrico(widthParam = max-width-param)
+    display flex
+    justify-content center
+    max-width widthParam
+
+mixin-padding-small(a,b)
+    a + b
+
+tone(dark= true)
+    if(dark)
+        color white
+        background-color  black
+    else
+        color black
+        background-color  black
